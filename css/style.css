@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Vazir-Thin.eot') format('eot');
+    src: url('../fonts/Vazir-Thin.ttf') format('ttf');
+    src: url('../fonts/Vazir-Thin.woff') format('woff');
+    src: url('../fonts/Vazir-Thin.woff2') format('woff2');
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'vazir';
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container1{
+    height: 100%;
+    margin: auto;
+}
+.body-append{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/640-abstract-blur-restaurant-and-cafe-interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+header nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header .hamburger{
+    display: none;
+}
+header .hamburger i{
+    color: white;
+}
+header nav ul{
+    width: 70%;
+    float: right;
+    height: 100%;
+    text-align: center;
+    text-align: right;
+    margin: 0 ;
+    position: relative;
+}
+.responsive-nav ul .cancel{
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+}
+
+header nav ul li.li1{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 4;
+}
+header nav ul li.li1 a ,header nav ul li.li1 p{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.responsive-nav{
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    z-index: 1;
+}
+.responsive-nav ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+.responsive-nav ul li{
+    width: 100%;
+    text-align: center;
+}
+
+header nav .banner{
+    width: 30%;
+    float: right;
+    height: 100%;
+    text-align: left;
+}
+header nav .banner img{
+    width: auto;
+    height: 100%;
+}
+.progress{
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 80px;
+}
+.progress-bar{
+    height: 100%;
+    background-image: linear-gradient(to right , red , blue);
+}
+
+.header-desc{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 40%;
+    text-align: center;
+    color: white;
+}
+.profle{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+.profle ul{
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    list-style-type: none;
+    position: relative;
+}
+.profle ul::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: -9px;
+    background-color: white;
+    transform: rotate(45deg);
+  }
+.profle.active{
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0);
+}
+
+
+
+#our-story{
+    width: 100%;
+    height: 500px;
+    padding: 50px 0;
+}
+#our-story .our-story-desc{
+    width: 50%;
+    float: right;
+    padding-top: 13%;
+}
+#our-story .our-story-desc p,#our-story .our-story-desc h1{
+    text-align: center;
+    width: 85%;
+}
+#our-story .our-story-img{
+    width: 50%;
+    float: right;
+}
+#our-story .our-story-img img{
+    width: 100%;
+}
+
+
+
+
+#sweet{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background-image: url('../images/wooden-surface-looking-out-empty-restaurant.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    clear: both;
+    position: relative;
+}
+#sweet .sweet-desc{
+    text-align: center;
+    color: white;
+    margin: 8% auto;
+    width: 50%;
+}
+
+
+
+#menu{
+    width: 100%;
+    padding: 50px 0;
+}
+#menu .menu-desc{
+    width: 50%;
+    text-align: center;
+    float: right;
+    margin-top: 10%;
+}
+#menu .menu-desc *{
+    width: 80%;
+    margin: 20px auto;
+    text-decoration: none;
+}
+#menu .menu-desc a{
+    border-bottom: 1px solid red;
+    padding: 10px 0 ;
+}
+#menu .menu-img{
+    width: 50%;
+    float: right;
+    padding: 0;
+}
+#menu .menu-img ul{
+    width: 100%;
+    list-style-type: none;
+}
+#menu .menu-img ul li{
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+#menu .menu-img ul li img{
+    width: 95%;
+    margin-top: 20px;
+    height: 200px;
+}
+
+
+
+
+
+
+#hot{
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    background-image: url('../images/abstract-blur-defocused-restaurant-coffee-shop-cafe-interior.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    clear: both;
+    top: 50px;
+}
+#hot .hot-desc{
+    width: 90%;
+    text-align: center;
+    margin: 10% auto;
+    color: white;
+}
+
+
+
+
+
+
+#delight{
+    width: 100%;
+    height: 400px;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+#delight .container{
+    height: 100%;
+}
+#delight .delight-desc{
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin:  auto;
+}
+#delight .delight-desc *{
+    width: 80%;
+    margin: 10% auto;
+}
+#delight .delight-img{
+    width: 50%;
+    float: right;
+    height: 100%;
+} 
+#delight .delight-img ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+#delight .delight-img ul li{
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: left;
+}
+#delight .delight-img ul li img{
+    width: 95%;
+    height: 100%;
+}
+
+
+
+
+
+
+footer{
+    background-color: #161414;
+    width: 100%;
+    overflow: auto;
+    padding-top: 50px;
+    color: white;
+}
+footer .footer{
+    width: 100%;
+    text-align: center;
+}
+footer .footer .footer-desc{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+footer .contact-us{
+    width: 100%;
+    margin-top: 50px;
+    overflow: auto;
+margin-bottom: 20px;
+}
+footer .contact-us .news-letter{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+footer .contact-us .news-letter input{
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+footer .contact-us .social{
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+footer .contact-us .social ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 5px 0;
+    padding: 10px 25px;
+}
+footer .contact-us .social ul li{
+    display: inline-block;
+}
+footer .contact-us .social ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer .contact-us .social ul li a i{
+    font-size: 25px;
+    margin: 0 10px;
+}
+.copy-right{
+    width: 100%;
+    color: white;
+    background-color: #5f5353;
+    text-align: center;
+    padding: 30px 0;
+    clear: both;
+}

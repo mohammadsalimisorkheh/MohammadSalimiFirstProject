@@ -1,0 +1,161 @@
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1200px) {
+    #our-story {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    header nav ul {
+        width: 85%;
+    }
+
+    header nav .banner {
+        width: 15%;
+    }
+
+    #our-story .our-story-desc {
+        padding: 0;
+    }
+
+    #our-story {
+        padding-bottom: 0;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: 500px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+        float: right;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    header .hamburger i {
+        font-size: 40px;
+    }
+
+    header nav .banner {
+        float: left;
+    }
+
+    #our-story .our-story-desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    #our-story .our-story-desc * {
+        margin: 10px auto;
+    }
+
+    #our-story .our-story-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    #our-story .our-story-img img {
+        width: 70%;
+    }
+
+    #our-story .our-story-img {
+        margin-bottom: 20px;
+    }
+
+    #sweet {
+        height: 220px;
+    }
+
+    #sweet .sweet-desc {
+        width: 85%;
+    }
+    #menu .menu-desc{
+        width: 100%;
+        margin-top: 0;
+    }
+    #menu .menu-img{
+        width: 100%;
+    }
+    #menu .menu-img ul li{
+        width: 25%;
+    }
+    #menu .menu-img ul li img{
+        height: 150px;
+    }
+    #delight{
+        padding: 0;
+    }
+    #delight .delight-desc{
+        width: 100%;
+    }
+    #delight .delight-img{
+        width: 100%;
+    }
+    #delight .delight-img ul{
+        padding: 0;
+    }
+
+    #delight .delight-img ul li img{
+        height: 100%;
+    }
+    #delight .delight-img ul li{
+        height: 75%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    header nav .banner img {
+        width: 100%;
+    }
+        #menu .menu-img ul li{
+        width: 50%;
+        display: inline-block;
+    }
+    #menu .menu-img ul{
+        margin: auto;
+        padding: 0;
+    }
+    footer .footer .footer-desc{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    footer .footer .footer-desc p{
+        width: 90%;
+        margin: auto;
+    }
+    footer .contact-us .news-letter{
+        width: 100%;
+    }
+    footer .contact-us .social{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header-desc {
+        width: 90%;
+        margin: auto;
+    }
+
+    #sweet {
+        height: 260px;
+    }
+    #hot .hot-desc{
+        margin: 20% auto;
+    }
+    #delight .delight-img ul li img{
+        height: 100%;
+    }
+}
