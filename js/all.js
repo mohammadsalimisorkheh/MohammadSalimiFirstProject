@@ -28,5 +28,17 @@ $(document).ready(function () {
         progressbar.style.width = scrolled + "%";
     })
 
+    window.addEventListener("load", function(){
+var topAdWrapper = document.querySelector(".reg-grid-container");
+
+for(var i = 0; i < 6; i++)
+{
+    topAdWrapper.removeChild(topAdWrapper.childNodes[0]);
+}
+
+var body = document.querySelector("body");
+body.style.backgroundImage = "url('../images/cup-coffee-with-heart-drawn-foam.jpg')";
+});
+    
 });
 
